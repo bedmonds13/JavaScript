@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    
+    <title>
+        Calculator
+    </title>
+    <head>
+        <link rel = "stylesheet" type="text/css" href="styles.css"/>
+        <script src="/calculator.js"></script>
+    </head>
+    <body>
+        <div class = "mainApp">
+            
+            <h1 class = "AppTitle">Tip Caluclator</h1>
+            <div class = "AppBody">   
+                <p> <label class= "input-header mealamountlabel">Meal Total: </label> <input id="mealtotal" type="number"> </p>
+                
+                <p> <label class = "input-header tipamountlabel">Tip Amount: </label>
+                    <select id = "tipamount">
+                        <option disabled selected value = "0">How was service today?</option>
+                        <option value="0.20">Great - 20%</option>
+                        <option value="0.15">Good - 15%</option>
+                        <option value="0.10">OK - 10%</option>
+                        <option value="0.0">Bad - 0%</option>
+                    </select>
+                <button id="calculatebutton">Calculate!</button>   
+                <p><div>Calculation:</div>  <div id = "calculation-display">Tip</div></p>
+            </div>
+            
+        </div>
+    </body>
+</html>
